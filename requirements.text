@@ -4,3 +4,8 @@ plotly
 pandas
 numpy
 joblib
+streamlit
+scikit-learn
+pandas
+numpy
+imbalanced-learn
