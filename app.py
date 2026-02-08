@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-import sklearn
 # ১. মডেল লোড করা
 try:
     with open('churn_rf_model.pkl', 'rb') as f:
