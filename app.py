@@ -41,7 +41,7 @@ if st.button("Analyze Customer"):
     input_data = np.array([[gen_val, age, mar_val, dependents, referrals, tenure, offer_val, phone_val, long_dist, mult_val]])
     
     # প্রেডিকশন
-    prediction = model.predict(input_data)
+    prediction = rf_model.predict(input_data)
     
     st.divider()
     if prediction[0] == 1:
