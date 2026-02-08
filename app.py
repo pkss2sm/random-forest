@@ -1,12 +1,9 @@
 import streamlit as st
 import pickle
 import numpy as np
-try:
-    with open('churn_rf_model.pkl', 'rb') as f:
-        model = pickle.load(f)
-except FileNotFoundError:
-    st.error("মডেল ফাইলটি পাওয়া যায়নি! আগে 'churn_rf_model.pkl' সেভ করো।")
-
+import joblib
+odel = joblib.load('churn_rf_model.pkl')
+scaler = joblib.load('feature_names.pkl')
 # ২. অ্যাপের ইন্টারফেস
 st.set_page_config(page_title="Customer Churn Predictor", layout="centered")
 st.title("Telecom Churn Predictor 📊")
